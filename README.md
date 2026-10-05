@@ -2,6 +2,14 @@
 
 A Python and ROS 2 simulation framework for modeling, controlling, and teleoperating concentric tube robots (CTRs).
 
+## ctr-sim.py
+
+Used to control the CTR robot. Is only physics based using the ctr-sim framework. Communicates to the octopus controller and assumes the robot starts with all tubes facing up and each tube being extended a certain amount (check the py file for config of each tube and initial start). 
+
+The script is currently open loop, however a closed loop script with either a camera and aruco markers or an absolute position tag is planned.
+
+## CTR-Sim framework talk continued below:
+
 ![CTR-SIM overview](docs/media/CTR-SIM_Overview_Screenshot.png)
 
 `ctr-sim` implements segment-aware mechanics for concentric tube robots together with numerical task-space control and real-time ROS 2 visualization. The simulator models tube geometry, elastic properties, torsional interaction, backbone curvature, and spatial backbone integration, then exposes the resulting robot through a Cartesian teleoperation interface.
