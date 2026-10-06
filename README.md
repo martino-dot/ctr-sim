@@ -2,11 +2,17 @@
 
 A Python and ROS 2 simulation framework for modeling, controlling, and teleoperating concentric tube robots (CTRs).
 
-## ctr-sim.py
+## ctr_teleop.py
 
 Used to control the CTR robot. Is only physics based using the ctr-sim framework. Communicates to the octopus controller and assumes the robot starts with all tubes facing up and each tube being extended a certain amount (check the py file for config of each tube and initial start). 
 
 The script is currently open loop, however a closed loop script with either a camera and aruco markers or an absolute position tag is planned.
+
+
+## Precurvature script and folder
+A python script used to determine the precurvature of a picture of tubes, using an 60mm classic aruco marker.
+
+Pictures must be taken as straight "down" in the plane of things.
 
 ## CTR-Sim framework talk continued below:
 
